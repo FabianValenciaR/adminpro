@@ -5,19 +5,20 @@ import { LoginComponent } from './login/login.component';
 import { APP_ROUTES } from './app.routes';
 import { RegisterComponent } from './login/register.component';
 import { PagesModule } from './pages/pages.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     LoginComponent,
     AppComponent,
-    RegisterComponent
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
-
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
